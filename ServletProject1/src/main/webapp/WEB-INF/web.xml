@@ -42,7 +42,7 @@
   		<servlet-class>edu.kh.servlet.controller.ServletEx2</servlet-class>
   </servlet>
   
-  
+ 
   
   <servlet-mapping>
   		<servlet-name>ex2</servlet-name>
