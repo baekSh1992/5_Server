@@ -24,7 +24,7 @@ public class ForEachServlet extends HttpServlet{
 		pList.add(new Person("홍길동", 25, "서울시 노원구"));
 		pList.add(new Person("김길동", 24, "서울시 성북구"));
 		pList.add(new Person("고길동", 26, "서울시 종로구"));
-		pList.add(new Person("강길동", 35, "서울시 동대문구"));
+		pList.add(new Person("강길동", 35, "서울시 중랑구"));
 		pList.add(new Person("박길동", 48, "서울시 성동구"));
 		
 		req.setAttribute("pList", pList); // request에 값 세팅
