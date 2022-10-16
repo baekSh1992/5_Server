@@ -20,6 +20,7 @@
 			EL로 request에 세팅된 파라미터를 얻어오는 방법
 			\${ param.name속성값 }
 			
+			
 			+ 데이터 파싱(String -> int)도 자동으로 된다.
 		</pre>
 		

@@ -1,6 +1,6 @@
 package edu.kh.jsp.student.model.dao;
 
-//JDBCTemplate의 static 필드/메서드 호출 시 클래스명 생략
+// JDBCTemplate의 static 필드/메서드 호출 시 클래스명 생략
 import static edu.kh.jsp.common.JDBCTemplate.*;
 
 import java.io.FileInputStream;
@@ -77,6 +77,14 @@ public class StudentDAO {
 		return stdList;
 	}
 
+	
+	
+	/** 학과별 조회 DAO
+	 * @param conn
+	 * @param deptName
+	 * @return
+	 * @throws Exception
+	 */
 	public List<Student> selectDept(Connection conn, String deptName) throws Exception{
 		
 		List<Student> stdList = new ArrayList<>();

@@ -35,6 +35,12 @@ public class StudentService {
 		return stdList;
 	}
 
+	
+	/** 학과별 조회 서비스
+	 * @param deptName
+	 * @return
+	 * @throws Exception
+	 */
 	public List<Student> selectDept(String deptName) throws Exception{
 		Connection conn = getConnection();
 		
