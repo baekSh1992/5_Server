@@ -8,6 +8,7 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.Map;
 import java.util.Properties;
+import java.util.Set;
 
 import edu.kh.project.main.model.dao.MainDAO;
 import edu.kh.project.member.model.vo.Member;
@@ -87,7 +88,40 @@ public class MemberDAO {
 		
 		return loginMember;
 	}
-	
+
+	/** 회원가입 DAO
+	 * @param conn
+	 * @param member
+	 * @return
+	 * @throws Exception
+	 */
+	public int signUp(Connection conn, Member member) throws Exception{
+		
+			int result = 0;	// 결과 저장용 변수
+		
+		try {
+			String sql = prop.getProperty("signUp");
+			
+			pstmt = conn.prepareStatement(sql);
+			
+			pstmt.setString(1, member.getMemberEmail());
+			pstmt.setString(2, member.getMemberPw());
+			pstmt.setString(3, member.getMemberNickname());
+			pstmt.setString(4, member.getMemberTel());
+			pstmt.setString(5, member.getMemberAddress());
+			
+			result = pstmt.executeUpdate();
+			
+			
+			
+		} finally {
+			
+			close(stmt);
+		}
+		
+		
+		return result;
+	}
 	
 	
 	

@@ -109,10 +109,12 @@
                     
                                 <!-- 회원가입/IP.PW찾기 -->
                                 <article id="signUp-find-area">
-                                    <a href="#">회원가입</a>
+                                    <a href="/member/signUp">회원가입</a>
                                     <span> | </span>
                                     <a href="#">ID/PW찾기</a>
                                 </article>
+
+                            </form>
                         </c:when>
                         
                         <%-- 로그인 O인 경우 --%>

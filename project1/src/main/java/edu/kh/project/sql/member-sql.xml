@@ -9,8 +9,17 @@
 	TO_CHAR(ENROLL_DATE, 'YYYY"년" MM"월" DD"일" HH24"시" MI"분" SS"초"') AS ENROLL_DATE 
 FROM "MEMBER"
 WHERE MEMBER_DEL_FL = 'N'
-AND MEMBER_EMAIL =?
+AND MEMBER_EMAIL = ?
 AND MEMBER_PW = ?
     </entry>
+
+    <entry key="signUp">
+    INSERT INTO "MEMBER"
+VALUES(SEQ_MEMBER_NO.NEXTVAL, ?, ?, ?, ?, ?,
+				DEFAULT, DEFAULT, DEFAULT, DEFAULT
+)
+    </entry>
+
+    
 </properties>
 

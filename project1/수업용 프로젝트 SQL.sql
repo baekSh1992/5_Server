@@ -270,6 +270,11 @@ AND MEMBER_EMAIL = 'user01@kh.or.kr'
 AND MEMBER_PW = 'pass01!';
 
 
+-- 회원가입 SQL
+INSERT INTO "MEMBER"
+VALUES(SEQ_MEMBER_NO.NEXTVAL, ?, ?, ?, ?, ?,
+				DEFAULT, DEFAULT, DEFAULT, DEFAULT
+);
 
 
 

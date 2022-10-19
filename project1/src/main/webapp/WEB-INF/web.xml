@@ -9,4 +9,15 @@
     <welcome-file>default.jsp</welcome-file>
     <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
+  
+  <error-page>
+  <!-- 
+  	404 발생시 - 1) 요청 주소 확인
+                 2) jsp 경로 확인
+                 3) 프로젝트가 컴파일 안됨
+   -->
+  	<error-code>404</error-code>
+  	<location>/WEB-INF/views/common/404error.jsp</location> <!-- 404 발생시 보여줄 페이지 연결 -->
+  </error-page>
+  
 </web-app>
