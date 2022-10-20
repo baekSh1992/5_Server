@@ -276,9 +276,15 @@ VALUES(SEQ_MEMBER_NO.NEXTVAL, ?, ?, ?, ?, ?,
 				DEFAULT, DEFAULT, DEFAULT, DEFAULT
 );
 
+-- 회원 정보 수정 (PK = 식별자)
+UPDATE "MEMBER" SET
+MEMBER_NICKNAME ='변경된 닉네임',
+MEMBER_TEL  = '01022224444',
+MEMBER_ADDRESS  = '12345,,서울,,어딘가'
+WHERE MEMBER_NO = 4;
+							--> 로그인한 회원의 번호
 
-
-
+SELECT * FROM "MEMBER"; 
 
 
 

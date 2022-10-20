@@ -99,4 +99,5 @@
 
 #signUp-btn:active{
     transform: scale(0.95);
+    justify-self: end;
 }
