@@ -284,7 +284,7 @@ MEMBER_ADDRESS  = '12345,,서울,,어딘가'
 WHERE MEMBER_NO = 4;
 							--> 로그인한 회원의 번호
 
-SELECT * FROM "MEMBER"; 
+SELECT * FROM "MEMBER";
 
 UPDATE "MEMBER" SET
 MEMBER_PW = '$2a$10$6WYOY0eikF8piJF/Mp.eg.p4v4l7hRtJCOOyKVIswVmcHtbtgRrpO';
@@ -300,8 +300,9 @@ FROM "MEMBER"
 WHERE MEMBER_DEL_FL = 'N'
 AND MEMBER_EMAIL = 'user03@kh.or.kr';
 
-
-
+DELETE 
+FROM "MEMBER"
+WHERE MEMBER_NO != '1'; 
 
 
 
