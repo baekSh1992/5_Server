@@ -35,5 +35,4 @@
 
     <%-- 로그인정보 오류 message 1회 출력 후 session scope에서 삭제 (안하면 맞게 입력해도 또 나옴)--%>
     <c:remove var="message" scope="session" />
-    
 </c:if>
